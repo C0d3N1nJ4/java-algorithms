@@ -1,7 +1,8 @@
 package com.example.javaalgorithms.queues;
 
 import java.util.LinkedList;
-import java.util.Queue;
+
+                                     import java.util.Queue;
 
 public class GenerateBinaryNumbers {
 
@@ -10,6 +11,7 @@ public class GenerateBinaryNumbers {
         printBinary(10);
     }
 
+    //This solution is not as good as the one below because it requires parsing
     private static void generateBinaryNumbers(int i) {
         if (i < 0) {
             System.out.println();
@@ -24,11 +26,10 @@ public class GenerateBinaryNumbers {
             String s2 = current + "1";
             queue.add(s1);
             queue.add(s2);
-
         }
-
     }
 
+    //This solution is better than the one above because it does not require parsing
     private static void printBinary(int n) {
         if (n < 1) {
             System.out.println();
@@ -41,8 +42,6 @@ public class GenerateBinaryNumbers {
             System.out.println(current + " ");
             queue.add(current * 10);
             queue.add(current * 10 + 1);
-
-
         }
     }
 
