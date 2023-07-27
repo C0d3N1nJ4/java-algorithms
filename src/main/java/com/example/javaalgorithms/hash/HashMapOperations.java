@@ -1,6 +1,7 @@
 package com.example.javaalgorithms.hash;
 
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class HashMapOperations {
 
@@ -21,6 +22,14 @@ public class HashMapOperations {
             if (retrievedEmployee != null) {
             System.out.println(retrievedEmployee.name + " : " + retrievedEmployee.department);
         }
+
+        HashSet<String> productCodes = new HashSet<>();
+            productCodes.add("123");
+            productCodes.add("456");
+            productCodes.add("789");
+
+            System.out.println(productCodes.contains("123"));
+            System.out.println(productCodes.contains("999"));
     }
 }
 
