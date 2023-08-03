@@ -1,6 +1,4 @@
-package com.example.javaalgorithms.hash;
-
-import java.util.HashMap;
+package com.example.javaalgorithms.hashmaps;
 
 public class Employee {
 

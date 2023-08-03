@@ -1,4 +1,4 @@
-package com.example.javaalgorithms.hash;
+package com.example.javaalgorithms.hashmaps;
 
 import java.util.HashMap;
 import java.util.HashSet;
