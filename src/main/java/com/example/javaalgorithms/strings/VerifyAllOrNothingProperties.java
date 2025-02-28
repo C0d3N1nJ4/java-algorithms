@@ -15,8 +15,6 @@ public class VerifyAllOrNothingProperties {
         return s.chars().allMatch(Character::isDigit);
     }
 
-
-
     public static void main(String[] args) {
         System.out.println(isUpperCase("Hello"));
         System.out.println(isLowerCase("hello"));

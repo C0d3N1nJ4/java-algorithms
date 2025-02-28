@@ -2,9 +2,9 @@
 
 This repository contains algorithms for :
 
-Arrays
-Hashmaps
-Linkedlists
-Queues
-Stacks
-Strings
+1. Arrays
+2. Hashmaps
+3. Linkedlists
+4. Queues
+5. Stacks
+6. Strings
