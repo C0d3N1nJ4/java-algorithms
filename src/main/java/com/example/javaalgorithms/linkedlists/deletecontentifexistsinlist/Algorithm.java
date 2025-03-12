@@ -1,6 +1,5 @@
 package com.example.javaalgorithms.linkedlists.deletecontentifexistsinlist;
 
-
 public class Algorithm {
 
     public static void main(String[] args) {
@@ -21,5 +20,4 @@ public class Algorithm {
         list.deleteContentIfExistsInList(3);
         list.displayContentsOfList();
     }
-
 }
