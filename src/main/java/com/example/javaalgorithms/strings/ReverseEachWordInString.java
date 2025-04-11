@@ -1,26 +1,27 @@
 package com.example.javaalgorithms.strings;
 
 public class ReverseEachWordInString {
-    public static String reverseEachWord(String s) {
-        if (s == null || s.isEmpty()) {
-            return s;
-        }
-        StringBuilder result = new StringBuilder();
-        String[] array = s.split(" ");
+  public static String reverseEachWord(String s) {
+    if (s == null || s.isEmpty()) {
+      return s;
+    }
+    StringBuilder result = new StringBuilder();
+    String[] array = s.split(" ");
 
-        for (int i = 0; i < array.length; i ++) {
-            result.append(reverse(array[i]));
-            if (i != array.length - 1) {
-                result.append(" ");
-            }
-        }
-        return result.toString();
+    for (int i = 0; i < array.length; i++) {
+      result.append(reverse(array[i]));
+      if (i != array.length - 1) {
+        result.append(" ");
+      }
     }
-    public static String reverse(String s) {
-        return new StringBuilder(s).reverse().toString();
-    }
+    return result.toString();
+  }
 
-    public static void main(String[] args) {
-        System.out.println(reverseEachWord("I love coding"));
-    }
+  public static String reverse(String s) {
+    return new StringBuilder(s).reverse().toString();
+  }
+
+  public static void main(String[] args) {
+    System.out.println(reverseEachWord("I love coding"));
+  }
 }
